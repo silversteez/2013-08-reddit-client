@@ -7,6 +7,9 @@ angular.module('myApp', ['ngRoute', 'myApp.controllers', 'myApp.directives', 'my
     .when('/', {
       templateUrl: 'templates/home.html'
     })
+    .when('/login', {
+      templateUrl: 'templates/login.html'
+    })
     .when('/settings', {
       templateUrl: '../templates/settings.html',
       controller: 'SettingsController'
