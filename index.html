@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <!-- Bootstrap our AngularJS app and setup -->
-<html>
+<html ng-app='myApp'>
 <head>
   <title>my Angular App</title>
 </head>
 <body>
-
-<h1>Hi</h1>
+<div ng-controller='MainController'>
+  <h1>Sweet Articles!</h1>
+  <div my-sweet-directive></div>
+</div>
 
   <script type="text/javascript" src="js/vendor/angular/angular.js"></script>
   <script type="text/javascript" src="js/vendor/angular-route/angular-route.js"></script>
@@ -15,5 +17,6 @@
   <script type="text/javascript" src="js/services.js"></script>
   <script type="text/javascript" src="js/directives.js"></script>
   <script type="text/javascript" src="js/filters.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </body>
 </html>
