@@ -1,2 +1,17 @@
-<h1>Sweet Articles!</h1>
-<div my-sweet-directive></div>
+<div ng-controller='MainController'>
+  <h1>Sweet Articles!</h1>
+  <h2>Sweet Reddit Goodness...</h2>
+  <div class='article' ng-repeat='article in articles'>
+    <div class='articleStuff'>
+      <img ng-src='{{article.data.thumbnail}}' />
+      <h3>Title: {{article.data.title}}</h2>
+      <h4>Author: {{article.data.author}}</h4>
+      <h4>Votes: {{article.votes || 0}}</h4>
+    </div>
+    <div class='voteButtons'>
+      <button ng-click='voteUp(article)'>Vote UP!</button>
+      <button ng-click='voteDown(article)'>Vote DOWN!</button>
+    </div>
+  </div>
+</div>
+<!-- <div my-sweet-directive></div> -->

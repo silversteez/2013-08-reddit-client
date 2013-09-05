@@ -7,8 +7,7 @@ angular.module('myApp.directives', [])
     //   ngModel: '=',
     // },
     templateUrl: 'templates/home.html',
-    link: function(scope, ele, attr) {
-      // scope.votes = 5;
+    link: function($scope, $ele, $attr) {
     }
   };
 });
